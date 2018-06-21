@@ -1,7 +1,6 @@
 #pragma once
 
 namespace ctiui {
-
 	using namespace System;
 	using namespace System::ComponentModel;
 	using namespace System::Collections;
@@ -12,11 +11,9 @@ namespace ctiui {
 	/// <summary>
 	/// Summary for crt_form
 	/// </summary>
-	public ref class crt_form : public System::Windows::Forms::Form
-	{
+	public ref class crt_form : public System::Windows::Forms::Form {
 	public:
-		crt_form(void)
-		{
+		crt_form(void) {
 			InitializeComponent();
 			//
 			//TODO: Add the constructor code here
@@ -27,12 +24,9 @@ namespace ctiui {
 		/// <summary>
 		/// Clean up any resources being used.
 		/// </summary>
-		~crt_form()
-		{
+		~crt_form(){
 			if (components)
-			{
 				delete components;
-			}
 		}
 
 	private:
@@ -46,8 +40,7 @@ namespace ctiui {
 		/// Required method for Designer support - do not modify
 		/// the contents of this method with the code editor.
 		/// </summary>
-		void InitializeComponent(void)
-		{
+		void InitializeComponent(void) {
 			this->components = gcnew System::ComponentModel::Container();
 			this->Size = System::Drawing::Size(300,300);
 			this->Text = L"crt_form";
